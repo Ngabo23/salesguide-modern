@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/table-images.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> 
+</head>
+
+<body>
+<header class="site-header">
+    <div class="header-left">
+        <div class="brand-text">
+            <span>ISOKO</span>
+            <span class="middle">ONLINE</span>
+            <span>MARKET</span>
+        </div>
+    </div>
+    <div class="header-right">
+        <h1 class="brand-name">
+            <span class="red">Buysell<span class="or">or</span>Rent</span><span class="dot">.com</span>
+        </h1>
+    </div>
+</header>
+
+<!-- Navigation Progress Bar (3 pages) -->
+<div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+    <div class="steps">
+        <div class="step active" data-step="1">1. Ibisabwa</div>
+        <div class="step" data-step="2">2. Uko isoko rikora</div>
+        <div class="step" data-step="3">3. Services</div>
+    </div>
+</div>
+
+<!-- Main Container -->
+<div class="main-container">
+    <!-- Page 1: Requirements (combined old step 1 + step 2) -->
+    <div class="step-content active" id="step1">
+        <div class="step-header">
+            <h1>Wujuje ibisabwa ngo uhabwe ibisobanuro?</h1>
+        </div>
+
+        
+        <div class="marketing_purpose" style="color: black;">
+            <h2><ins>IBISABWA: INCAMAKE(SUMMARY)</ins></h2>
+
+            <h3>1.1 UBURYO IBISOBANURO BITANGWA </h3>
+            <h3>1.2 ICYANGOMBWA/NYIR'UMUTUNGO </h3>
+            <h3>1.3 ICYANGOMBWA/UMUTUNGO</h3>
+            <h3>1.4 GUFATA UMWANZURO </h3>
+            <h3>1.5 KUGARAGAZA UBUSHOBOZI(50,000 RWF)</h3>
+
+        </div>
+
+
+        <div class="registration-form">
+
+            <h2 style="margin-top:18px;">1.1 UBURYO IBISOBANURO BITANGWA</h2>
+                       
+             <img alt=""  src="image/DESIGN.jpeg">
+
+            <p  style="margin-top:18px;"><strong>WITEGUYE GUSOBANURIRWA HAKORESHEJWE VIDEO NTA KIBAZO?</strong></p>
+            <p style="margin-top: 8px; margin-bottom: 16px;"><small>(VIDEO 3: BURI VIDEO IRI HAGATI YA 5-10 MINUTES)</small></p>
+
+            <div class="form-grid" style="grid-template-columns: repeat(2, minmax(120px, 1fr)); gap:20px; align-items:center; margin-bottom:24px;">
+                <label style="font-size: 1.05em;"><input type="radio" name="a14_ready" value="oya"> OYA</label>
+                <label style="font-size: 1.05em;"><input type="radio" name="a14_ready" value="yego"> YEGO</label>
+            </div>
+          
+            <h2>1.2 ICYANGOMBWA/NYIR'UMUTUNGO </h2>
+
+
+            <div id="docPreviews" class="doc-previews">
+                <div id="docPreview_id" class="doc-preview-card">
+                    <img alt="ID preview" style="max-width: 100%; height: auto; display:block;" src="image/id.png">
+                </div>
+                <div id="docPreview_passport" class="doc-preview-card">
+                    <img alt="Passport preview" style="max-width: 100%; height: auto; display:block;" src="image/passport.png">
+                </div>
+                <div id="docPreview_permit" class="doc-preview-card">
+                    <img alt="Permit preview" style="max-width: 100%; height: auto; display:block;" src="image/sample-permit.png">
+                </div>
+            </div>
+
+            <h2 style="margin-top: 18px;">1.3 ICYANGOMBWA/UMUTUNGO</h2>
+            
+            <div id="a12Images" class="doc-previews">
+                <figure class="doc-preview-card">
+                    <img id="a12_image_1" alt="Icyangombwa cy'ubutaka" style="max-width: 100%; height: auto; display:block;" src="image/UPI-ni-imibare-igaragara-ku-byangombwa-byubutaka-iburanga.jpeg">
+                    <figcaption id="a12_image_1_name" class="doc-preview-name">Icyangombwa cy'ubutaka</figcaption>
+                    <span style="display:inline-block; margin-right: 16px;">
+                        <strong>UPI:</strong>
+                        <input type="text" id="a11_upi" name="a11_upi" placeholder="UPI..." style="margin-left:8px; min-width: 220px;">
+                    </span>
+                </figure>
+                <figure class="doc-preview-card">
+                    <img id="a12_image_2" alt="Carte jaune" style="max-width: 100%; height: auto; display:block;" src="image/cartejone.png">
+                    <figcaption id="a12_image_2_name" class="doc-preview-name">Carte jaune</figcaption>
+                    <span style="display:inline-block;">
+                        <strong>Plaque:</strong>
+                        <input type="text" id="a11_plaque" name="a11_plaque" placeholder="Plaque..." style="margin-left:8px; min-width: 220px;">
+                    </span>
+                </figure>
+                
+            </div>
+
+
+            
+            <h2 style="margin-top: 18px;">Handitseho abantu bangahe?</h2>
+            <p style="margin-bottom: 8px;"><strong>Hitamo:</strong></p>
+            <div class="form-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                <div class="form-group">
+                    <input type="checkbox" id="a12_wenyine" name="a12_people" value="wenyine">
+                    <label for="a12_wenyine">Wenyine</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="a12_umugabo" name="a12_people" value="umugabo">
+                    <label for="a12_umugabo">Umugabo</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="a12_umugore" name="a12_people" value="umugore">
+                    <label for="a12_umugore">Umugore</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="a12_abavandimwe" name="a12_people" value="abavandimwe">
+                    <label for="a12_abavandimwe">Abavandimwe</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="a12_umubyeyi" name="a12_people" value="umubyeyi">
+                    <label for="a12_umubyeyi">Umubyeyi</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="a12_abandi" name="a12_people" value="abandi">
+                    <label for="a12_abandi">Abandi</label>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 18px;">1.4 UMWANZURO WO KWISHYURA </h2>
+            <br>
+            <ul>
+                <h3>
+                  
+                   <img id="" alt="section 3" style="max-width: 100%; height: auto; display:block;" src="image/1.3exp.png">
+
+                    <div class="marketing_purpose" style="color: #ea120b;">
+                    <h3>✅ Ntago ari itegeko kuyishyura wishyura aruko wanyuzwe utanyuzwe ntabwo uyishyura.</h3>
+                    </div>
+
+                        <br>UMWANZURO WAWUFATA ??? 
+                </h3>
+            </ul>
+            <p style="margin-bottom: 8px;"><strong>Hitamo kimwe:</strong></p>
+            <div class="form-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                <div class="form-group">
+                    <input type="checkbox" id="a13_yego" name="a13_decision" value="yego">
+                    <label for="a13_yego">Yego</label>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="a13_oya" name="a13_decision" value="oya">
+                    <label for="a13_oya">Oya</label>
+                </div>
+            </div>
+
+            <div id="a13_followup" style="display:none; margin-top: 10px;">
+                <p style="margin-bottom: 8px;"><strong>Niba ari “Oya”, ubaza nde?</strong></p>
+                <div class="form-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+                    <div class="form-group">
+                        <input type="checkbox" id="a13_f_umugabo" name="a13_followup" value="umugabo">
+                        <label for="a13_f_umugabo">Umugabo?</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="a13_f_umugore" name="a13_followup" value="umugore">
+                        <label for="a13_f_umugore">Umugore?</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="a13_f_umuvandimwe" name="a13_followup" value="umuvandimwe">
+                        <label for="a13_f_umuvandimwe">Umuvandimwe?</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="a13_f_umubyeyi" name="a13_followup" value="umubyeyi">
+                        <label for="a13_f_umubyeyi">Umubyeyi?</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" id="a13_f_abandi" name="a13_followup" value="abandi">
+                        <label for="a13_f_abandi">Abandi?</label>
+                        <label for="a12">bisaba gusubirayo mukagarukana (consultation ni 100,000 RWF)</label>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            
+           
+
+            <div id="landingContinuation"></div>
+        </div>
+    </div>
+
+    <!-- Step 4: New Table (from source code) -->
+    <div class="step-content" id="step4">
+
+
+        <div id="step43Section">
+        <div class="step-header">
+            
+            <p>Umukozi ntabwo yemerewe gutanga ibindi bisobanuro birenze video. Ibindi bisobanuro, ibibazo n'ibisubizo bitangwa kumukiriya wamaze kwishyura consultation.</p>
+        </div>
+        
+
+       <!-- <div class="step-header">
+            <h2><i class="fas fa-comments-dollar"></i> 2.4.1: Kwishyura Consultation</h2>
+            <p>Ubu ni bwo buryo bwo kwishyura consultation nyuma yo kubona ibisobanuro bya video.</p>
+        </div>-->
+
+       <div class="requirement-card active" id="reqCard4">
+            <div class="req-header">
+                <h3><i class="fas fa-play-circle"></i> 2.3.1 Ibisobanuro byibanze: video Igisubizo </h3>
+                <div class="req-status" id="status4">Pending</div>
+            </div>
+           
+            <p class="req-description">Umukozi ntabwo yemerewe gutanga ibindi bisobanuro birenze video. Ibindi bisobanuro, ibibazo n'ibisubizo bitangwa kumukiriya wamaze kwishyura consultation.</p>
+            <div class="req-confirmation">
+                <button class="btn-confirm no" onclick="confirmRequirement(4, false)"><i class="fas fa-times"></i> ntago nyuzwe, nzagaruka</button>
+                <button class="btn-confirm yes" onclick="confirmRequirement(4, true)"><i class="fas fa-check"></i> ndanyuzwe</button>
+            </div>
+        </div>
+
+        <div class="consultation-container" style="margin-top: 18px;">
+            <div class="payment-section" id="paymentSection">
+                <h3><i class="fas fa-money-check-alt"></i> 2.3.2 Uburyo bwo kwishyura / Payment Details</h3>
+                
+                <div class="payment-option">
+                    <label class="checkbox-option">
+                        <input type="checkbox" id="directPayment" onchange="togglePaymentDetails()">
+                        <span>Ishyura ukoresheje Uburyo wahisemo / Pay directly using selected method</span>
+                    </label>
+                </div>
+
+                <div class="payment-actions" style="display:flex; gap:10px; margin-top:15px;">
+                    <button class="btn btn-secondary" id="changeMethodBtn" onclick="goToRequirementStep(3)"><i class="fas fa-exchange-alt"></i>Hindura Uburyo bwo kwishyura /Change Payment Method</button>
+                </div>
+                
+                <div class="payment-details" id="paymentDetails" style="display: none;">
+                    <div id="selectedPaymentDetails"></div>
+                    <div class="payment-actions" style="display:flex; gap:10px; margin-top:15px;">
+                        <button class="btn btn-primary" id="paidBtn" onclick="handlePaidClick()"><i class="fas fa-money-check"></i>Nishyure mpa code / I've Paid (Generate Code)</button>
+                    </div>
+                    <div class="payment-code" id="paymentCodeContainer" style="display: none; margin-top:15px;">
+                        <h4><i class="fas fa-barcode"></i>Code yatanzwe / Generated Payment Code</h4>
+                        <div class="code-display-wrap">
+                            <div class="code-display" id="paymentCode">PAY-XXXX-XXXX-XXXX</div>
+                            <button type="button" class="btn btn-copy-code" onclick="copyPaymentCode()" title="Copy code"><i class="fas fa-copy"></i> Andika / Copy</button>
+                        </div>
+                        <p class="code-instruction">Tap "Copy" above to copy the code, then paste it in the confirmation field below. / Andika iyi code hanyuma ushyire mu rukuta rwo kwemeza.</p>
+                    </div>
+                    <div class="form-group" id="confirmationGroup" style="display:none;">
+                        <label for="confirmationInput"><i class="fas fa-key"></i> code yemeza ko wishyuye / Payment Confirmation Code</label>
+                        <input type="text" id="confirmationInput" placeholder="Shyiramo code yokwemeza / Enter confirmation code">
+                        <p class="code-instruction" id="confirmationHelp">After you make the payment, click "I've Paid" to generate a confirmation code which will appear below. Enter it here to confirm.</p>
+                    </div>
+                    <div class="payment-actions" style="display:flex; gap:10px; margin-top:15px;">
+                        <button class="btn btn-success" id="confirmPaymentBtn" onclick="confirmPayment()" disabled><i class="fas fa-check-circle"></i> Emeza /Confirm Payment</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="no-payment-section" style="margin-top: 18px;">
+                <h3><i class="fas fa-ban"></i> 2.3.3 Ntaburyo bwo kwishyura /No Payment Option</h3>
+                <div class="warning-box">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Umukiriya utishyuye consultation ntabindi bisobanuro ahabwa / If no payment is made for consultation, you cannot proceed further.</p>
+                </div>
+                <button class="btn btn-secondary" onclick="noPayment()">
+                    <i class="fas fa-arrow-left"></i> Subira inyuma/Return Back</button>
+            </div>
+
+        </div>
+
+        </div>
+
+        <div id="step41Section">
+        <div class="step-header">
+            <h2><i class="fas fa-table"></i> 2.3 ISOKO NTAGO ARI COMMISSIONAIRE</h2>
+        </div>
+<div class="video-container">
+    <iframe
+        width="100%"
+        height="400"
+        src="https://www.youtube.com/embed/awSztH5MmrI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+</div>
+        
+             
+       
+        </div>
+    </div>
+
+    <!-- Page 2: Uko isoko rikora (2.1–2.3.x merged into #step3 at runtime; #step4 is source then removed) -->
+    <div class="step-content" id="step3">
+        <div class="step-header">
+        <h2 style="margin-top: 18px;">Ibisobanuro rusange: 15 minutes ni ubuntu,gukomeza hasabwa consultation: 50,000 FWF</h2>
+    </div>
+
+
+        <div class="marketing_purpose" style="color:black;">
+            
+            <h3>2.1 IBISOBANURO:CONSULTATION </h3>
+            <h3>2.2 GUTE MUBIKORWA </h3>
+              <h3>2.3 ISOKO NTAGO ARI COMMISSIONAIRE</h3>
+                      </div>
+        
+        <div class="marketing_purpose" style="color: #ea120b;">
+           
+ <div class="step-header">
+            <h2 style="margin-top: 28px"><i class="fas fa-comments "></i> 2.1 IBISOBANURO:CONSULTATION</h2>
+ </div>
+        </div>
+        
+        <div class="roles-illustration-wrap">
+            <img src="image/table1.jpeg" alt="Roles Illustration" class="roles-illustration" width="768" height="512" decoding="async">
+        </div>
+       
+        <div class="step-header">
+            <h2 style="margin-top: 28px"><i class="fas fa-building "></i> 2.2 GUTE MUBIKORWA</h2>
+            <h3><b>Isoko rikora gute mubikorwa?</b></h3>
+            <h3>KU BAKILIYA BATISHYURA CONSULTATION HAGENDEWE KURI THEORY GUSA ( BEMERA BABONYE - IBIKORWA)</h3>
+        </div>
+        
+        <div class="tour-container">
+            <div class="tour-navigation">
+                <button class="tour-nav-btn" onclick="prevTourCard()"><i class="fas fa-chevron-left"></i> Previous</button>
+                <div class="tour-counter" id="tourCounter">Card 1 of 7</div>
+                <button class="tour-nav-btn next-green" onclick="nextTourCard()">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="tour-cards-container">
+                <div class="tour-card active" id="tourCard1">
+                    <div class="tour-card-image">
+                        <img src="image/isuzuma.jpg" alt="Company Entrance">
+                    </div>
+                    <div class="tour-card-content">
+                        <h3><i class="fas fa-user-check"></i> 2.2.1 Isuzuma / consultation</h3>
+                        <p>VIDEO</p>
+                        <p>Video ntacyo igabanya nkumukozi unaniwe ntanubwo yakubeshya ntanicyo yakongeraho ikubeshya kugirango wishyure abantu bose bahabwa amakuru angana</p>
+                        <h3>2.2.1.1 kuberiki consultation</h3>
+                        <ul>
+                            <li>Transiporo kujya gusura no gufotora</li>
+                            <li> Umwanya wibibazo</li>
+                        </ul>
+                        <h3>2.2.1.2 Consultation: amategeko n'amabwiriza</h3>
+                        <ul>
+                            <li>Consultation isanzwe (kugenda ukagaruka 100000rwf) uyumunsi 50000rwf</li>
+                            <li> Guhabwa ibisubizo rusange</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <div class="tour-card" id="tourCard2">
+                    <div class="tour-card-image">
+                        <img src="image/guichet.jpg" alt="Reception Area">
+                    </div>
+                    <div class="tour-card-content">
+                        <h3><i class="fas fa-comments-dollar"></i>2.2.2 Aho bishyurira/Guichet/Counter</h3>
+                        <p>Uburyo bwokwishyura bwose buremewe</p>
+                        <p>facture/EBM</p>
+                        <p>Service zizewe</p>
+                        <h3 style="color:red"> <i class="fa "></i> wahabwa service ya EBM kuri service zitizewe ?</h3>
+                    </div>
+                </div>
+                <div class="tour-card" id="tourCard3">
+                    <div class="tour-card-image">
+                        <img src="image/graphic design.jpg" alt="Meeting Rooms">
+                    </div>
+                    <div class="tour-card-content">
+                        <h3><i class="fas fa-video"></i>2.2.3 Gutegura ibigurishwa n'ibikodeshwa/Content creation & Graphic design</h3>
+                        <p>amafoto / pictures</p>
+                        <p>gusemura / Translation</p>
+                        <p>urwego mpuzamahanga / International standard</p>
+                        <h3 style="color:red"> <i class="fa "></i> Company yategura ibi byose utarishyura consultation ?</h3>
+                    </div>
+                </div>
+                <div class="tour-card" id="tourCard4">
+                    <div class="tour-card-image">
+                        <img src="image/sales consultant.jpg" alt="Office Space">
+                    </div>
+                    <div class="tour-card-content">
+                        <h3><i class="fas fa-desktop"></i> 2.2.4 umujyanama w'ubucuruzi/ sales consultatant</h3>
+                        <p>Agaciro kw'isoko / market value</p>
+                        <p>amahitamo / service choice</p>
+                        <h3 style="color:red"> <i class="fa "></i> Company yakugira inama utarishyura consultation ?</h3>
+                    </div>
+                </div>
+                <div class="tour-card" id="tourCard5">
+                    <div class="tour-card-image">
+                        <img src="image/umujyanama mukuru.jpg" alt="Technology Hub">
+                    </div>
+                    <div class="tour-card-content">
+                        <h3><i class="fas fa-user-tie"></i>2.2.5 umujyanama mukuru wubucuruzi / senior sales consultant </h3>
+                        <p>company ntoya/small medium enterprise (SME)</p>
+                        <p>company nini/large companies & factories</p>
+                        <p>corporate clients (bank insurance)</p>
+                        <h3 style="color:red"> <i class="fa "></i> Umukiriya aje kurubuga yarazanywe nizindi service urugero sale y'ubukwe cyangwa bureaun de change igaraje ahise areba inzu, ikibanza/ imodoka yawe akaguhamagara wamusubiza inyuma  ?</h3>
+                    </div>
+                </div>
+                <div class="tour-card" id="tourCard6">
+                    <div class="tour-card-image">
+                        <img src="image/boardroom.jpg" alt="Support Center">
+                    </div>
+                    <div class="tour-card-content">
+                        <h3><i class="fas fa-users"></i> 2.2.6 Ahabera inama (gukurikirana) / Boardroom-follow up</h3>
+                        <p>gukurikirana inama igihe abakiliya batabonetse </p>
+                        <p>imyanzuro (Rwanda day,expo,RTV,TV1,radios)</p>
+                    </div>
+                </div>
+                <div class="tour-card" id="tourCard7">
+                    <div class="tour-card-image">
+                        <img src="image/call center.jpg" alt="Future Vision">
+                    </div>
+                    <div class="tour-card-content">
+                        <h3><i class="fas fa-headset"></i> 2.2.7 Guhamagara no kwitaba / call center</h3>
+                        <p>Uwo mwavuganaga akorera aha ashinzwe gufata gahunda <br> gahunda no kuzikurikirana gusa ntabwo yakira abakiliya imbonankubone</p>
+                        <h3 style="color:red"> <i class="fa "></i> Company yitaba kandi igahamagara abakiliya barenga million kumwaka mubakiliya ibihumbi 7 cyangwa 10 haburamo abakiliya hagati ya 7 na 10 yaguhuza nabo ?</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tour-dots">
+                <span class="tour-dot active" onclick="goToTourCard(1)"></span>
+                <span class="tour-dot" onclick="goToTourCard(2)"></span>
+                <span class="tour-dot" onclick="goToTourCard(3)"></span>
+                <span class="tour-dot" onclick="goToTourCard(4)"></span>
+                <span class="tour-dot" onclick="goToTourCard(5)"></span>
+                <span class="tour-dot" onclick="goToTourCard(6)"></span>
+                <span class="tour-dot" onclick="goToTourCard(7)"></span>
+            </div>
+        </div>
+        
+        
+        <div class="button-group">
+            <button type="button" class="btn btn-prev" onclick="prevPageSection()"><i class="fas fa-arrow-left"></i> Previous</button>
+            <button type="button" class="btn btn-next" id="step43Next" onclick="if(validatePayment()){nextStep(3)}" disabled>Next <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page 1 continuation: Requirements -->
+
+
+    <div class="step-content" id="step2">
+        <div class="step-header">
+            <h2>1.5 KUGARAGAZA UBUSHOBOZI(50,000 RWF) </h2>
+            <h3>Mu kinyarwanda: <strong>Abagira inkwi barya ibihiye</strong></h3>   
+        </div>
+        <div class="marketing_purpose" style="color: #ea120b;">
+         
+             <img alt=""  src="image/formc.png">
+        </div>
+
+       
+    
+    
+        <div class="requirements-container">
+            <div class="requirements-navigation">
+                <button class="req-nav-btn" onclick="prevRequirement()"><i class="fas fa-chevron-left"></i> Previous</button>
+                <div class="req-counter" id="reqCounter">Requirement 1 of 3</div>
+                <button class="req-nav-btn next-green" onclick="nextRequirement()">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="requirements-dots">
+                <span class="req-dot active" onclick="goToRequirement(1)"></span>
+                <span class="req-dot" onclick="goToRequirement(2)"></span>
+                <span class="req-dot" onclick="goToRequirement(3)"></span>
+            </div>
+            
+            <div class="requirements-cards-container">
+                <!-- 3.1 Terms and Conditions -->
+                <div class="requirement-card active" id="reqCard1">
+                    <div class="req-header">
+                        <h3><i class="fas fa-file-contract"></i> 1.6 Kuberiki consultation (Video)</h3>
+                        <div class="req-status" id="status1">Pending</div>
+                    </div>
+                    <div class="video-container">
+                        <video class="video-preview" preload="metadata" muted>
+                            <source src="video/buysellsguide.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-placeholder" onclick="playVideo(this, 'video/buysellsguide.mp4')">
+                            <div class="play-button-overlay">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Click to Play Video</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="req-description">Umukiriya yasobanuriwe impamvu consultation itangwa</p>
+                    <div class="req-confirmation">
+                        <button class="btn-confirm no" onclick="confirmRequirement(1, false)"><i class="fas fa-times"></i> oya, hagarara</button>
+                        <button class="btn-confirm yes" onclick="confirmRequirement(1, true)"><i class="fas fa-check"></i> Yego, komeza</button>
+                    </div>
+                </div>
+                
+                <!-- 3.2 Money Availability -->
+                <div class="requirement-card" id="reqCard2">
+                    <div class="req-header">
+                        <h3><i class="fas fa-money-bill-wave"></i> 1.6.1 Kugaragaza ubushobozi</h3>
+                        <div class="req-status" id="status2">Pending</div>
+                    </div>
+                    <div class="money-amount">
+                        <p class="req-description">Umukiriya yagaragaje ubushobozi? <br> Kubivuga mu magambo ntabwo bihagije</p>
+                    </div>
+                    <div class="req-confirmation">
+                        <button class="btn-confirm no" onclick="confirmRequirement(2, false)"><i class="fas fa-times"></i> ntayahari hagarara</button>
+                        <button class="btn-confirm yes" onclick="confirmRequirement(2, true)"><i class="fas fa-check"></i> arahari komeza</button>
+                    </div>
+                </div>
+
+                <!-- 3.3 Payment Methods -->
+                <div class="requirement-card" id="reqCard3">
+                    <div class="req-header">
+                        <h3><i class="fas fa-credit-card"></i> 1.6.2 Uburyo Umukiriya yarekanye amafaranga</h3>
+                        <div class="req-status" id="status3">Pending</div>
+                    </div>
+                    <div class="payment-methods">
+                        <div class="method-grid">
+                            <label class="method-option">
+                                <input type="radio" name="paymentMethod" value="visa" onchange="selectPaymentMethod('visa')">
+                                <div class="method-content">
+                                    <div class="method-image">
+                                        <img src="image/visa.jpg" alt="Visa Card">
+                                    </div>
+                                    <span>Visa Card</span>
+                                </div>
+                            </label>
+                            <label class="method-option">
+                                <input type="radio" name="paymentMethod" value="mastercard" onchange="selectPaymentMethod('mastercard')">
+                                <div class="method-content">
+                                    <div class="method-image">
+                                        <img src="image/mastercard.jpg" alt="Master Card">
+                                    </div>
+                                    <span>Master Card</span>
+                                </div>
+                            </label>
+                            <label class="method-option">
+                                <input type="radio" name="paymentMethod" value="cash" onchange="selectPaymentMethod('cash')">
+                                <div class="method-content">
+                                    <div class="method-image">
+                                        <img src="image/cash.jpg" alt="Cash Payment">
+                                    </div>
+                                    <span>Cash</span>
+                                </div>
+                            </label>
+                            <label class="method-option">
+                                <input type="radio" name="paymentMethod" value="momo" onchange="selectPaymentMethod('momo')">
+                                <div class="method-content">
+                                    <div class="method-image">
+                                        <img src="image/bank.jpg" alt="Bank Transfer">
+                                    </div>
+                                    <span>Bank Transfer</span>
+                                </div>
+                            </label>
+                            <label class="method-option">
+                                <input type="radio" name="paymentMethod" value="mtn" onchange="selectPaymentMethod('mtn')">
+                                <div class="method-content">
+                                    <div class="method-image">
+                                        <img src="image/mtn momo.jpg" alt="MTN Mobile Money">
+                                    </div>
+                                    <span>MTN Mobile Money</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="req-confirmation">
+                        <button class="btn-confirm yes" onclick="confirmRequirement(3, true)"><i class="fas fa-check"></i> Confirm Payment Method</button>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="requirements-progress">
+                <div class="progress-info">
+                    <span>Progress: </span>
+                    <span id="progressText">0 of 3 requirements completed</span>
+                </div>
+                <div class="progress-bar-small">
+                    <div class="progress-fill" id="requirementsProgress"></div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="button-group">
+            <button type="button" class="btn btn-prev" onclick="prevPageSection()"><i class="fas fa-arrow-left"></i> Previous</button>
+            <button type="button" class="btn btn-next" onclick="nextPageSection()" id="step4Next" disabled>Next <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Page 3: Services -->
+    <div class="step-content" id="step6">
+        
+        <div class="step-header">
+            <h2 style="margin-top: 18px;">Ibisobanuro kuri service hasabwa kubanza kwishyura consultation: 50,000 FWF</h2>
+        </div>
+
+        <div class="marketing_purpose" style="color:black;">
+            
+            <h3>3.1 UBUJYANAMA </h3>
+            <h3>3.2 TALIFU </h3>
+           
+
+        </div>
+        <br/>
+
+        <h2> Urifuza umukiriya ryari?</h2>
+        <p>
+            <input type="checkbox" id="ukwezi" name="ukwezi" value="ukwezi"><label for="ukwezi">Amezi</label>
+            <input type="checkbox" id="Icyumweru" name="Icyumweru" value="Icyumweru"><label for="Icyumweru">Ibyumweru</label>
+            <input type="checkbox" id="Umunsi" name="Umunsi" value="Umunsi"><label for="Umunsi">Iminsi</label>
+            <input type="checkbox" id="Umunsi" name="Umunsi" value="Umunsi"><label for="Umunsi">Amasaha</label>
+
+        </p>
+
+        <div class="marketing_purpose" style="color: #ea120b;">
+            <h2><ins>Kubona umukiriya vuba biterwa na service wahisemo.</ins></h2>
+            <br>
+
+          
+            </div> 
+            
+            
+               
+
+        
+      <div class="roles-illustration-wrap">
+            <!--<img src="image/ibisobanuro1-small.jpg" alt="Roles Illustration" class="roles-illustration" width="768" height="512" decoding="async">-->
+             <img src="image/ubujyanama1.jpeg" alt="Roles Illustration" class="roles-illustration" width="768" height="512" decoding="async">
+
+
+          
+      </div>
+        <p  style="margin-top:18px;font-size:25px"><strong><i class="fas fa-search-dollar"></i> UNYUNZWE N'INAMA WAGIRIWE KUMUTUNGO WAWE?</strong></p>
+              
+            <div class="form-grid" style="grid-template-columns: repeat(2, minmax(120px, 1fr)); gap:20px; align-items:center; margin-bottom:24px;">
+                <label style="font-size: 1.09em;"><input type="radio" name="a14_ready" value="oya" style="font-size:10px"> OYA</label>
+                <label style="font-size: 1.09em;"><input type="radio" name="a14_ready" value="yego" style="font-size:10px"> YEGO</label>
+            </div>
+
+
+ <div class="roles-illustration-wrap">
+            <img src="image/mk.jpeg" alt="Roles Illustration" class="roles-illustration" width="768" height="512" decoding="async">
+        </div>
+        <p  style="margin-top:18px;font-size:25px"><strong><i class="fas fa-clock"></i>TWIRENGAGIJE TARIFU (AMAFARANGA YO KUJYA KU ISOKO) KUGIRANGO UBONE UMUKILIYA VUBA, WAHITAMO IKI?</strong></p>
+        <div class="form-grid" style="grid-template-columns: repeat(2, minmax(120px, 1fr)); gap:20px; align-items:center; margin-bottom:24px;">
+                <label style="font-size: 1.09em;"><input type="radio" name="a14_ready" value="BASIC" style="font-size:10px"> BASIC</label>
+                <label style="font-size: 1.09em;"><input type="radio" name="a14_ready" value="STANDARD" style="font-size:10px"> STANDARD</label>
+              <label style="font-size: 1.09em;"><input type="radio" name="a14_ready" value="PREMIUM" style="font-size:10px">  PREMIUM</label>
+                <label style="font-size: 1.09em;"><input type="radio" name="a14_ready" value="PREMIUM EXPRESS" style="font-size:10px"> PREMIUM EXPRESS</label>
+            </div>
+        
+        <div class="roles-illustration-wrap">
+            <img src="image/ubujyanama3.jpeg" alt="Roles Illustration" class="roles-illustration" width="768" height="512" decoding="async">
+          </div>
+        <p  style="margin-top:18px;font-size:25px"><strong><i class="fas fa-layer-group"></i>KUGIRANGO UBONE UMUKILIYA VUBA KANDI WISHYURE MAKE,WAHITAMO KWISHYURA RYARI?</strong></p>
+         <div class="form-grid" style="grid-template-columns: repeat(2, minmax(120px, 1fr)); gap:20px; align-items:center; margin-bottom:24px;">
+                <label style="font-size: 1.09em;"><input type="radio" name="a14_ready" value="MU KWEZI" style="font-size:10px"> MU KWEZI</label>
+                <label style="font-size: 1.09em;"><input type="radio" name="a14_ready" value="MU CYUMWERU" style="font-size:10px">MU CYUMWERU </label>
+              <label style="font-size: 1.09em;"><input type="radio" name="a14_ready" value="EJO" style="font-size:10px">EJO</label>
+                <label style="font-size: 1.09em;"><input type="radio" name="a14_ready" value=" UYU MUNSI" style="font-size:10px"> UYU MUNSI</label>
+            </div>
+        
+
+        
+        <div class="roles-container">
+            <div class="explanation-video">
+                <h3><i class="fas fa-video"></i> Sobanukirwa service zitangwa na buysellorrent muri Video</h3>
+                <div class="video-container">
+                    <video class="video-preview" preload="metadata" muted>
+                        <source src="video/video 2.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-placeholder" onclick="playVideo(this, 'video/video 2.mp4')">
+                        <div class="play-button-overlay">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Click to Play Video</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="video-description"> reba video kugirango usobanukirwe ibijyanye na basic,standard & premium/ Watch this video to understand each role in detail</p>
+            </div>
+
+            <div class="roles-grid">
+                <div class="role-card" id="basicRole">
+                    <div class="role-header">
+                        <h3 style="background-color: rgb(4, 156, 62); color: rgb(249, 246, 246);"><i class="fas fa-bicycle"></i> Basic</h3>
+                    </div>
+                    <div class="role-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Uwagushaka ku rubuga yakubona</li>
+                            <li><i class="fas fa-check"></i> ikigurishwa cyangwa igikodeshwa kijya hasi ku rubuga</li>
+                            <li><i class="fas fa-check"></i> harahendutse cyane ariko ariko bisaba ko bagushakisha </li>
+                            <li><i class="fas fa-times"></i> ni nko kujya mwisoko risanzwe ukajya mu gikari</li>
+                            <li><i class="fas fa-times"></i> abakiliya benshi ntago bigora bajya kugushaka</li>
+                            <li><i class="fas fa-times"></i> abakiliya bakugeraho ni bacye cyane.</li>
+                            <li><i class="fas fa-times"></i> Umukiliya ashobora guhamagara abandi wowe atarakugereho</li>
+                        </ul>
+                    </div>
+                    <button class="btn-role-select" onclick="selectRole('basic')" style="background-color: rgb(4, 156, 62); color: rgb(249, 246, 246);">Select Basic</button>
+                </div>
+                
+                <div class="role-card featured" id="standardRole">
+                    <div class="role-header">
+                        <h3 style="background-color: rgb(25, 88, 164); color: rgb(249, 246, 246);"><i class="fas fa-motorcycle"></i> Standard</h3>
+                    </div>
+                    <div class="role-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> All Basic features</li>
+                            <li><i class="fas fa-check"></i> Service yishura amafaranga agereranije </li>
+                            <li><i class="fas fa-check"></i> ikigurishwa cyangwa igikodeshwa kijya hagati</li>
+                            <li><i class="fas fa-check"></i> nkuko wacururiza mwisoko ukajya hagati yabandi</li>
+                            <li><i class="fas fa-check"></i> amahirwe yo kubona abakiliya arisumbuye ugereranije na basic</li>
+                            <li><i class="fas fa-times"></i> bisaba kugushakiya ariko ntago uba ari kure cyane <br> ugereranije na basic</li>
+                            <li><i class="fas fa-times"></i> ni nko gushakira abakiliya hagati mu nyubako igeretse</li>
+                        </ul>
+                    </div>
+                    <button class="btn-role-select" onclick="selectRole('standard')"  style="background-color: rgb(25, 88, 164); color: rgb(249, 246, 246);">Select Standard</button>
+                </div>
+                
+                <div class="role-card" id="premiumRole">
+                    <div class="role-badge">Popular</div>
+                    <div class="role-header">
+                        <h3 style="background-color: rgb(238, 181, 11); color: rgb(249, 246, 246);"><i class="fas fa-car"></i> Premium</h3>
+                    </div>
+                    <div class="role-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> All Standard features + Standard</li>
+                            <li><i class="fas fa-check"></i> +Premium ni service iguhma amahirwe menshi kurusha inzindi zose </li>
+                            <li><i class="fas fa-check"></i> +Amafaranga yishyurwa mbere ni macye cyane ugereranije nayabacommissionaire</li>
+                            <li><i class="fas fa-check"></i> +Ikigurishwa cyangwa igikodeshwa kigiyeho gihita kijya hejuru yibindi</li>
+                            <li><i class="fas fa-times"></i> +Kimanuka aruko haje undi wishyura premium</li>
+                        </ul>
+                    </div>
+                    <button class="btn-role-select" onclick="selectRole('premium')" style="background-color: rgb(238, 181, 11); color: rgb(249, 246, 246);">Select Premium</button>
+                </div>
+
+
+                      <!-- PREMIUM EXPRESS -->
+                <div class="role-card premium-express-card" id="premiumExpressRole">
+                    <div class="role-badge">MOST POPULAR</div>
+                    <div class="role-header">
+                        <h3 class="premium-express-title" style="background-color: rgb(244, 236, 3); color: rgb(249, 246, 246);"><i class="fas fa-plane"></i> Premium Express</h3>
+                    </div>
+                    <div class="role-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> service ya premium yishyuwe mu amasaha 24.</li>
+                            <li><i class="fas fa-check"></i> Nta yandi mafaranga arenze aya premium </li>
+                            
+                            <li><i class="fas fa-check"></i> kongerera amahirwe yo kubona umukiliya mu masaha 24</li>
+                            <li><i class="fas fa-check"></i> isoko riguhuza n’abakiliya bari muri database</li>
+                            <li><i class="fas fa-check"></i> abahamagara baturutse televisions, abandika sms & whatsapp , abiyandikisha ku bakozi ba marketing n’abagera kuri office.</li>
+                            <li><i class="fas fa-check"></i> service igufasha kubona umukiliya vuba cyane </li>
+                            <li><i class="fas fa-check"></i> bitabaye ngombwa gutegereza abasura website gusa </li>
+                            <li><i class="fas fa-check"></i> ni service iguhuza abakiliya baza bagushaka direct </li>
+                            <li><i class="fas fa-check"></i> Iyo utabonye umukiliya isoko rikomeza kugushakira abakiliya muri ubu buryo, </li>
+                            <li><i class="fas fa-check"></i> byibura buri kwezi mugihe cyamasezerano, nta yandi mafaranga wishyuye. </li>
+                        </ul>
+                    </div>
+                    <button class="btn-role-select premium-express-btn" onclick="selectRole('premiumExpress')">Select Premium Express</button>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="button-group">
+            <button type="button" class="btn btn-prev" onclick="prevPageSection()"><i class="fas fa-arrow-left"></i> Previous</button>
+            <!-- <button type="button" class="btn btn-next" onclick="nextStep(7)" id="step6Next" disabled>Next <i class="fas fa-arrow-right"></i></button> -->
+            <!-- the steps should end up here -->
+            <button type="button" class="btn btn-success" onclick="completeProcess()">
+                <i class="fas fa-check-circle"></i> Complete Process
+            </button>
+        </div>
+    </div>
+
+    <!-- Step 7: Choose Role (old Step 6) -->
+
+    <!-- i am requested to hide this page  -->
+        <div class="step-content" id="step7" style="display: none;"> 
+    <!-- <div class="step-content" id="step7"> -->
+        <div class="step-header">
+            <h2><i class="fas fa-hand-pointer"></i> Step 6: Hitamo uburyo bukunogeye/Choose Your Role</h2>
+            <p>Hitamo bitewe nuburyo wabyumvise / Select the role based on your understanding</p>
+        </div>
+        
+        <div class="role-selection">
+            <div class="selected-role-display" id="selectedRoleDisplay">
+                <div class="role-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <div class="role-info">
+                    <h3>Ntaburyo mwahisemo /No Role Selected Yet</h3>
+                    <p>Please select a role from the options below</p>
+                    <p class="role-selected-price" id="selectedRolePrice" style="font-weight:600; color:var(--primary-color); margin-top:8px;">-</p>
+                </div>
+            </div>
+            
+            <div class="role-options">
+                <div class="role-option" onclick="finalizeRoleSelection('basic')" style="background-color: rgb(4, 156, 62); color: rgb(249, 246, 246);">
+                    <div class="role-icon-small">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="role-details">
+                        <h4 style="background-color: rgb(4, 156, 62); color: rgb(249, 246, 246);">Basic</h4>
+                        <p>For individuals getting started</p>
+                    </div>
+                    <div class="role-select-check">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                
+                <div class="role-option" onclick="finalizeRoleSelection('standard')" style="background-color: rgb(25, 88, 164); color: rgb(249, 246, 246);">
+                    <div class="role-icon-small">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <div class="role-details">
+                        <h4 style="background-color: rgb(25, 88, 164); color: rgb(249, 246, 246);">Standard</h4>
+                        <p>For growing businesses</p>
+                    </div>
+                    <div class="role-select-check">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+                
+                <div class="role-option" onclick="finalizeRoleSelection('premium')"  style="background-color: rgb(238, 181, 11); color: rgb(249, 246, 246);">
+                    <div class="role-icon-small">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="role-details">
+                        <h4  style="background-color: rgb(238, 181, 11); color: rgb(249, 246, 246);">Premium</h4>
+                        <p>For enterprise solutions</p>
+                    </div>
+                    <div class="role-select-check">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="role-option" onclick="finalizeRoleSelection('premiumExpress')" style="background-color: rgb(75, 238, 11); color: rgb(249, 246, 246);">
+                    <div class="role-icon-small">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="role-details">
+                        <h4 style="background-color: rgb(75, 238, 11); color: rgb(249, 246, 246);">Premium Express</h4>
+                        <p>For urgent 24-hour visibility</p>
+                    </div>
+                    <div class="role-select-check">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button-group">
+            <button type="button" class="btn btn-prev" onclick="prevStep(6)"><i class="fas fa-arrow-left"></i> Previous</button>
+            <button type="button" class="btn btn-next" onclick="nextStep(8)" id="step7Next" disabled>Next <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Step 8: Summary & Export (old Step 7) -->
+    <div class="step-content" id="step8" style="display:none;">
+        <div class="step-header">
+            <h2><i class="fas fa-file-alt"></i> Step 8: Summary & Export</h2>
+            <p>Review all your information and export</p>
+        </div>
+        
+        <div class="summary-container" id="summaryContainer">
+            <div class="summary-card">
+                <h3><i class="fas fa-user-circle"></i> Personal Information</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-label">Full Name:</span>
+                        <span class="summary-value" id="summaryName">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Email:</span>
+                        <span class="summary-value" id="summaryEmail">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Phone:</span>
+                        <span class="summary-value" id="summaryPhone">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Address:</span>
+                        <span class="summary-value" id="summaryAddress">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Type of Product:</span>
+                        <span class="summary-value" id="summaryTypeOfProduct">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Acceptable Document:</span>
+                        <span class="summary-value" id="summaryAcceptableDocument">-</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="summary-card">
+                <h3><i class="fas fa-cog"></i> Requirements Status</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-label">Terms Accepted:</span>
+                        <span class="summary-value" id="summaryTerms">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Money Available:</span>
+                        <span class="summary-value" id="summaryMoney">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Payment Method:</span>
+                        <span class="summary-value" id="summaryPaymentMethod">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Video Watched:</span>
+                        <span class="summary-value" id="summaryVideo">-</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="summary-card">
+                <h3><i class="fas fa-credit-card"></i> Payment Details</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-label">Consultation Paid:</span>
+                        <span class="summary-value" id="summaryPayment">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Payment Code:</span>
+                        <span class="summary-value" id="summaryPaymentCode">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Payment Date:</span>
+                        <span class="summary-value" id="summaryPaymentDate">-</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="summary-card">
+                <h3><i class="fas fa-user-tag"></i> Selected Role</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-label">Role Type:</span>
+                        <span class="summary-value" id="summaryRole">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Price:</span>
+                        <span class="summary-value" id="summaryRolePrice">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Selection Date:</span>
+                        <span class="summary-value" id="summaryRoleDate">-</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="summary-card">
+                <h3><i class="fas fa-calendar"></i> Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Registration Completed</h4>
+                            <span class="timeline-date" id="timelineReg">-</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Payment Completed</h4>
+                            <span class="timeline-date" id="timelinePay">-</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Role Selected</h4>
+                            <span class="timeline-date" id="timelineRole">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="export-options">
+            <button class="btn-export" onclick="printSummary()">
+                <i class="fas fa-print"></i> Print Summary
+            </button>
+            <button class="btn-export" onclick="exportAsPDF()">
+                <i class="fas fa-file-pdf"></i> Export as PDF
+            </button>
+            <button class="btn-export" onclick="exportAsCSV()">
+                <i class="fas fa-file-csv"></i> Export as CSV
+            </button>
+        </div>
+        
+        <div class="button-group">
+            <button type="button" class="btn btn-prev" onclick="prevStep(7)"><i class="fas fa-arrow-left"></i> Previous</button>
+            <button type="button" class="btn btn-success" onclick="completeProcess()">
+                <i class="fas fa-check-circle"></i> Complete Process
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Loading Overlay -->
+<div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <p>Processing your request...</p>
+    </div>
+</div>
+
+<!-- Success Modal -->
+<div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+        <div class="modal-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Process Completed Successfully!</h3>
+        <p>Your registration has been processed. You will receive a confirmation email shortly.</p>
+        <button class="btn btn-primary" onclick="closeModalAndReset()">OK</button>
+    </div>
+</div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

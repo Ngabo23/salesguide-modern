@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="rw" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuySellorRent Sales Guide | Rwanda Online Market Guidance</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/table-images.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Scripts for PDF & Canvas -->
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@latest/dist/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> 
+</head>
+
+<body>
+
+<!-- Modern Header -->
+<header class="site-header">
+    <div class="header-left">
+        <div class="brand-badge">
+            <span class="dot-live"></span>
+            <span>Rwanda Verified Marketplace</span>
+        </div>
+        <div class="brand-text">
+            <span>ISOKO</span>
+            <span class="middle">ONLINE</span>
+            <span>MARKET</span>
+        </div>
+    </div>
+    <div class="header-right">
+        <h1 class="brand-name">
+            <span class="red">Buysell<span class="or">or</span>Rent</span><span class="dot">.com</span>
+        </h1>
+        <!-- Modern Theme Switcher -->
+        <button type="button" class="theme-switch-btn" id="themeSwitchBtn" onclick="toggleModernTheme()" title="Toggle Modern Mode / Dark Mode">
+            <i class="fas fa-sun"></i>
+            <span>Light Mode</span>
+        </button>
+    </div>
+</header>
+
+<!-- Navigation Progress Bar (3 Main Steps) -->
+<div class="progress-container">
+    <div class="progress-bar-wrapper">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="steps">
+        <div class="step active" data-step="1">
+            <span class="step-number">1</span>
+            <span>1. Ibisabwa (Requirements)</span>
+        </div>
+        <div class="step" data-step="2">
+            <span class="step-number">2</span>
+            <span>2. Uko isoko rikora (Operations)</span>
+        </div>
+        <div class="step" data-step="3">
+            <span class="step-number">3</span>
+            <span>3. Services & Plans</span>
+        </div>
+    </div>
+</div>
+
+<!-- Main Container -->
+<main class="main-container">
+
+    <!-- =========================================================================
+         PAGE 1: Requirements (Step 1)
+         ========================================================================= -->
+    <div class="step-content active" id="step1">
+        <div class="step-header">
+            <h1><i class="fas fa-clipboard-check" style="color:var(--primary-color);"></i> Wujuje ibisabwa ngo uhabwe ibisobanuro?</h1>
+            <p>Banza usuzume ibisabwa by'ibanze kugira ngo uhabwe ubufasha n'ibisobanuro birambuye ku buryo bwizewe.</p>
+        </div>
+
+        <!-- Summary Overview Box -->
+        <div class="modern-summary-box">
+            <h2><i class="fas fa-list-check" style="color:var(--primary-color);"></i> IBISABWA: INCAMAKE (SUMMARY)</h2>
+            <ul class="summary-checklist">
+                <li><i class="fas fa-video"></i> 1.1 Uburyo Ibisobanuro Bitangwa</li>
+                <li><i class="fas fa-id-card"></i> 1.2 Icyangombwa / Nyir'umutungo</li>
+                <li><i class="fas fa-file-invoice"></i> 1.3 Icyangombwa / Umutungo</li>
+                <li><i class="fas fa-handshake"></i> 1.4 Gufata Umwanzuro</li>
+                <li><i class="fas fa-wallet"></i> 1.5 Kugaragaza Ubushobozi (50,000 RWF)</li>
+            </ul>
+        </div>
+
+        <div class="registration-form">
+
+            <!-- 1.1 Video Explanation Agreement -->
+            <div class="section-block">
+                <div class="section-title-wrap">
+                    <span class="section-badge">1.1</span>
+                    <h2 class="section-title">UBURYO IBISOBANURO BITANGWA</h2>
+                </div>
+                           
+                <div class="section-illustration">
+                    <img alt="Design Briefing" src="image/DESIGN.jpeg" class="roles-illustration" loading="lazy">
+                </div>
+
+                <p><strong>WITEGUYE GUSOBANURIRWA HAKORESHEJWE VIDEO NTA KIBAZO?</strong></p>
+                <p><small><i class="fas fa-clock"></i> (VIDEO 3: BURI VIDEO IRI HAGATI YA 5-10 MINUTES)</small></p>
+
+                <div class="modern-choice-grid" style="max-width: 400px;">
+                    <label class="choice-pill-label">
+                        <input type="radio" name="a14_ready" value="oya">
+                        <i class="fas fa-times-circle"></i>
+                        <span>OYA</span>
+                    </label>
+                    <label class="choice-pill-label">
+                        <input type="radio" name="a14_ready" value="yego">
+                        <i class="fas fa-check-circle"></i>
+                        <span>YEGO</span>
+                    </label>
+                </div>
+            </div>
+          
+            <!-- 1.2 Document / Identity Requirements -->
+            <div class="section-block">
+                <div class="section-title-wrap">
+                    <span class="section-badge">1.2</span>
+                    <h2 class="section-title">ICYANGOMBWA / NYIR'UMUTUNGO</h2>
+                </div>
+                <p>Hitamo cyangwa reba ibyangombwa byemewe by'umutungo wawe:</p>
+
+                <div id="docPreviews" class="doc-previews">
+                    <div id="docPreview_id" class="doc-preview-card">
+                        <div class="doc-preview-img-wrap">
+                            <img alt="National ID preview" src="image/id.png" loading="lazy">
+                            <span class="doc-inspect-pill"><i class="fas fa-search-plus"></i> Kanda urebere hafi</span>
+                        </div>
+                        <span class="doc-preview-name"><i class="fas fa-id-badge"></i> Indangamuntu (National ID)</span>
+                    </div>
+
+                    <div id="docPreview_passport" class="doc-preview-card">
+                        <div class="doc-preview-img-wrap">
+                            <img alt="Passport preview" src="image/passport.png" loading="lazy">
+                            <span class="doc-inspect-pill"><i class="fas fa-search-plus"></i> Kanda urebere hafi</span>
+                        </div>
+                        <span class="doc-preview-name"><i class="fas fa-passport"></i> Pasiporo (Passport)</span>
+                    </div>
+
+                    <div id="docPreview_permit" class="doc-preview-card">
+                        <div class="doc-preview-img-wrap">
+                            <img alt="Driving permit preview" src="image/sample-permit.png" loading="lazy">
+                            <span class="doc-inspect-pill"><i class="fas fa-search-plus"></i> Kanda urebere hafi</span>
+                        </div>
+                        <span class="doc-preview-name"><i class="fas fa-address-card"></i> Uruhushya rwo Gutwara (Permit)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1.3 Property Verification Documents -->
+            <div class="section-block">
+                <div class="section-title-wrap">
+                    <span class="section-badge">1.3</span>
+                    <h2 class="section-title">ICYANGOMBWA / UMUTUNGO</h2>
+                </div>
+                
+                <div id="a12Images" class="doc-previews">
+                    <figure class="doc-preview-card">
+                        <div class="doc-preview-img-wrap">
+                            <img id="a12_image_1" alt="Icyangombwa cy'ubutaka" src="image/UPI-ni-imibare-igaragara-ku-byangombwa-byubutaka-iburanga.jpeg" loading="lazy">
+                            <span class="doc-inspect-pill"><i class="fas fa-search-plus"></i> Kanda urebere hafi</span>
+                        </div>
+                        <figcaption id="a12_image_1_name" class="doc-preview-name"><i class="fas fa-map-marked-alt"></i> Icyangombwa cy'ubutaka</figcaption>
+                        <div class="modern-input-group">
+                            <label for="a11_upi">Numero ya UPI y'Ubutaka</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-hashtag"></i>
+                                <input type="text" id="a11_upi" name="a11_upi" placeholder="Urugero: 1/02/03/04/..." autocomplete="off">
+                            </div>
+                        </div>
+                    </figure>
+
+                    <figure class="doc-preview-card">
+                        <div class="doc-preview-img-wrap">
+                            <img id="a12_image_2" alt="Carte jaune y'ikinyabiziga" src="image/cartejone.png" loading="lazy">
+                            <span class="doc-inspect-pill"><i class="fas fa-search-plus"></i> Kanda urebere hafi</span>
+                        </div>
+                        <figcaption id="a12_image_2_name" class="doc-preview-name"><i class="fas fa-car-side"></i> Carte Jaune (Imodoka / Moto)</figcaption>
+                        <div class="modern-input-group">
+                            <label for="a11_plaque">Numero ya Plaque</label>
+                            <div class="input-with-icon">
+                                <i class="fas fa-car"></i>
+                                <input type="text" id="a11_plaque" name="a11_plaque" placeholder="Urugero: RAE 123 A" autocomplete="off" style="text-transform:uppercase;">
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+
+                <!-- Ownership questions -->
+                <div style="margin-top: 24px;">
+                    <h3><i class="fas fa-users"></i> Handitseho abantu bangahe?</h3>
+                    <p><small>Hitamo abo mufatanyije kwandikwaho uyu mutungo:</small></p>
+                    
+                    <div class="tiles-grid">
+                        <label class="tile-checkbox-label" for="a12_wenyine">
+                            <input type="checkbox" id="a12_wenyine" name="a12_people" value="wenyine">
+                            <span>Wenyine</span>
+                        </label>
+                        <label class="tile-checkbox-label" for="a12_umugabo">
+                            <input type="checkbox" id="a12_umugabo" name="a12_people" value="umugabo">
+                            <span>Umugabo</span>
+                        </label>
+                        <label class="tile-checkbox-label" for="a12_umugore">
+                            <input type="checkbox" id="a12_umugore" name="a12_people" value="umugore">
+                            <span>Umugore</span>
+                        </label>
+                        <label class="tile-checkbox-label" for="a12_abavandimwe">
+                            <input type="checkbox" id="a12_abavandimwe" name="a12_people" value="abavandimwe">
+                            <span>Abavandimwe</span>
+                        </label>
+                        <label class="tile-checkbox-label" for="a12_umubyeyi">
+                            <input type="checkbox" id="a12_umubyeyi" name="a12_people" value="umubyeyi">
+                            <span>Umubyeyi</span>
+                        </label>
+                        <label class="tile-checkbox-label" for="a12_abandi">
+                            <input type="checkbox" id="a12_abandi" name="a12_people" value="abandi">
+                            <span>Abandi</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 1.4 Decision to Pay -->
+            <div class="section-block">
+                <div class="section-title-wrap">
+                    <span class="section-badge">1.4</span>
+                    <h2 class="section-title">UMWANZURO WO KWISHYURA</h2>
+                </div>
+                
+                <div class="section-illustration">
+                    <img alt="Section 3 Explanation" src="image/1.3exp.png" class="roles-illustration" loading="lazy">
+                </div>
+
+                <div class="reassurance-banner">
+                    <i class="fas fa-shield-halved"></i>
+                    <p>Ntago ari itegeko kuyishyura: wishyura aruko wanyuzwe, utanyuzwe ntabwo uyishyura.</p>
+                </div>
+
+                <p style="margin-top: 14px;"><strong>UMWANZURO WAWUFATA? (Hitamo kimwe)</strong></p>
+                <div class="modern-choice-grid" style="max-width: 380px;">
+                    <label class="choice-pill-label" for="a13_yego">
+                        <input type="checkbox" id="a13_yego" name="a13_decision" value="yego">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Yego</span>
+                    </label>
+                    <label class="choice-pill-label" for="a13_oya">
+                        <input type="checkbox" id="a13_oya" name="a13_decision" value="oya">
+                        <i class="fas fa-times-circle"></i>
+                        <span>Oya</span>
+                    </label>
+                </div>
+
+                <!-- Follow-up if answer is Oya -->
+                <div id="a13_followup" style="display:none; margin-top: 16px;">
+                    <div class="reassurance-banner warning">
+                        <i class="fas fa-circle-question"></i>
+                        <p>Niba ari "Oya", ubaza nde mbere yo gufata umwanzuro?</p>
+                    </div>
+
+                    <div class="tiles-grid">
+                        <label class="tile-checkbox-label" for="a13_f_umugabo">
+                            <input type="checkbox" id="a13_f_umugabo" name="a13_followup" value="umugabo">
+                            <span>Umugabo?</span>
+                        </label>
+                        <label class="tile-checkbox-label" for="a13_f_umugore">
+                            <input type="checkbox" id="a13_f_umugore" name="a13_followup" value="umugore">
+                            <span>Umugore?</span>
+                        </label>
+                        <label class="tile-checkbox-label" for="a13_f_umuvandimwe">
+                            <input type="checkbox" id="a13_f_umuvandimwe" name="a13_followup" value="umuvandimwe">
+                            <span>Umuvandimwe?</span>
+                        </label>
+                        <label class="tile-checkbox-label" for="a13_f_umubyeyi">
+                            <input type="checkbox" id="a13_f_umubyeyi" name="a13_followup" value="umubyeyi">
+                            <span>Umubyeyi?</span>
+                        </label>
+                        <label class="tile-checkbox-label" for="a13_f_abandi">
+                            <input type="checkbox" id="a13_f_abandi" name="a13_followup" value="abandi">
+                            <span>Abandi?</span>
+                        </label>
+                    </div>
+                    <p style="font-size:13px; color:var(--brand-red); font-weight:600;"><i class="fas fa-info-circle"></i> Icyitonderwa: Bisaba gusubirayo mukagarukana (Consultation yo kugaruka ni 100,000 RWF).</p>
+                </div>
+            </div>
+
+            <!-- Continuation Anchor for JS -->
+            <div id="landingContinuation"></div>
+        </div>
+    </div>
+
+    <!-- Step 2: Proof of Funds (Attached to Page 1 at runtime) -->
+    <div class="step-content" id="step2">
+        <div class="step-header">
+            <div class="section-title-wrap">
+                <span class="section-badge">1.5</span>
+                <h2 class="section-title">KUGARAGAZA UBUSHOBOZI (50,000 RWF)</h2>
+            </div>
+            <h3>Mu kinyarwanda: <strong>"Abagira inkwi barya ibihiye"</strong></h3>   
+        </div>
+
+        <div class="section-illustration">
+            <img alt="Form Overview" src="image/formc.png" class="roles-illustration" loading="lazy">
+        </div>
+
+        <div class="requirements-container">
+            <div class="requirements-navigation">
+                <button type="button" class="req-nav-btn" onclick="prevRequirement()"><i class="fas fa-chevron-left"></i> Previous</button>
+                <div class="req-counter" id="reqCounter">Requirement 1 of 3</div>
+                <button type="button" class="req-nav-btn next-green" onclick="nextRequirement()">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+            
+            <div class="requirements-dots">
+                <span class="req-dot active" onclick="goToRequirement(1)"></span>
+                <span class="req-dot" onclick="goToRequirement(2)"></span>
+                <span class="req-dot" onclick="goToRequirement(3)"></span>
+            </div>
+            
+            <div class="requirements-cards-container">
+                <!-- Requirement 1: Video -->
+                <div class="requirement-card active" id="reqCard1">
+                    <div class="req-header">
+                        <h3><i class="fas fa-play-circle" style="color:var(--primary-color);"></i> 1.6 Kuberiki consultation (Video)</h3>
+                        <div class="req-status" id="status1">Pending</div>
+                    </div>
+                    <div class="video-container">
+                        <video class="video-preview" preload="metadata" muted>
+                            <source src="video/buysellsguide.mp4" type="video/mp4">
+                            <source src="https://raw.githubusercontent.com/buysellorrent1/salesguide/main/video/buysellsguide.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-placeholder" onclick="playVideo(this, 'video/buysellsguide.mp4')">
+                            <div class="play-button-overlay">
+                                <i class="fas fa-play-circle"></i>
+                                <span>Kanda urebe Video y'ibisobanuro</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="req-description">Umukiriya yasobanuriwe impamvu consultation itangwa.</p>
+                    <div class="req-confirmation">
+                        <button type="button" class="btn-confirm no" onclick="confirmRequirement(1, false)"><i class="fas fa-times"></i> Oya, hagarara</button>
+                        <button type="button" class="btn-confirm yes" onclick="confirmRequirement(1, true)"><i class="fas fa-check"></i> Yego, komeza</button>
+                    </div>
+                </div>
+                
+                <!-- Requirement 2: Fund Availability -->
+                <div class="requirement-card" id="reqCard2">
+                    <div class="req-header">
+                        <h3><i class="fas fa-money-bill-wave" style="color:var(--success-color);"></i> 1.6.1 Kugaragaza ubushobozi</h3>
+                        <div class="req-status" id="status2">Pending</div>
+                    </div>
+                    <div class="reassurance-banner">
+                        <i class="fas fa-wallet"></i>
+                        <p class="req-description">Umukiriya yagaragaje ubushobozi bwa 50,000 RWF? <br><small>Kubivuga mu magambo ntabwo bihagije, bisaba kugaragaza uburyo bwo kwishyura.</small></p>
+                    </div>
+                    <div class="req-confirmation">
+                        <button type="button" class="btn-confirm no" onclick="confirmRequirement(2, false)"><i class="fas fa-times"></i> Ntayahari, hagarara</button>
+                        <button type="button" class="btn-confirm yes" onclick="confirmRequirement(2, true)"><i class="fas fa-check"></i> Arahari, komeza</button>
+                    </div>
+                </div>
+
+                <!-- Requirement 3: Payment Methods -->
+                <div class="requirement-card" id="reqCard3">
+                    <div class="req-header">
+                        <h3><i class="fas fa-credit-card" style="color:var(--primary-color);"></i> 1.6.2 Uburyo Umukiriya yerekanye amafaranga</h3>
+                        <div class="req-status" id="status3">Pending</div>
+                    </div>
+                    <div class="payment-methods">
+                        <div class="method-grid">
+                            <label class="method-option">
+                                <input type="radio" name="paymentMethod" value="visa" onchange="selectPaymentMethod('visa')">
+                                <div class="method-content">
+                                    <div class="method-image">
+                                        <img src="image/visa.jpg" alt="Visa Card">
+                                    </div>
+                                    <span>Visa Card</span>
+                                </div>
+                            </label>
+                            <label class="method-option">
+                                <input type="radio" name="paymentMethod" value="mastercard" onchange="selectPaymentMethod('mastercard')">
+                                <div class="method-content">
+                                    <div class="method-image">
+                                        <img src="image/mastercard.jpg" alt="Master Card">
+                                    </div>
+                                    <span>Master Card</span>
+                                </div>
+                            </label>
+                            <label class="method-option">
+                                <input type="radio" name="paymentMethod" value="cash" onchange="selectPaymentMethod('cash')">
+                                <div class="method-content">
+                                    <div class="method-image">
+                                        <img src="image/cash.jpg" alt="Cash Payment">
+                                    </div>
+                                    <span>Cash</span>
+                                </div>
+                            </label>
+                            <label class="method-option">
+                                <input type="radio" name="paymentMethod" value="momo" onchange="selectPaymentMethod('momo')">
+                                <div class="method-content">
+                                    <div class="method-image">
+                                        <img src="image/bank.jpg" alt="Bank Transfer">
+                                    </div>
+                                    <span>Bank Transfer</span>
+                                </div>
+                            </label>
+                            <label class="method-option">
+                                <input type="radio" name="paymentMethod" value="mtn" onchange="selectPaymentMethod('mtn')">
+                                <div class="method-content">
+                                    <div class="method-image">
+                                        <img src="image/mtn momo.jpg" alt="MTN Mobile Money">
+                                    </div>
+                                    <span>MTN Momo</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="req-confirmation">
+                        <button type="button" class="btn-confirm yes" onclick="confirmRequirement(3, true)"><i class="fas fa-check"></i> Emeza Uburyo wahisemo / Confirm Method</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="requirements-progress">
+                <div class="progress-info">
+                    <span>Incamake y'ibimaze kwemezwa:</span>
+                    <span id="progressText">0 of 3 requirements completed</span>
+                </div>
+                <div class="progress-bar-small">
+                    <div class="progress-fill" id="requirementsProgress"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button type="button" class="btn btn-prev" onclick="prevPageSection()"><i class="fas fa-arrow-left"></i> Subira Inyuma</button>
+            <button type="button" class="btn btn-next" onclick="nextPageSection()" id="step4Next" disabled>Komeza kuri Step 2 <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Step 4 source sections for JavaScript merge -->
+    <div class="step-content" id="step4">
+        <!-- 2.3.1 & 2.3.2 Consultation Section -->
+        <div id="step43Section">
+            <div class="step-header">
+                <h2><i class="fas fa-shield-alt" style="color:var(--primary-color);"></i> Amakuru ku Bakozi n'Ibisobanuro</h2>
+                <p>Umukozi ntabwo yemerewe gutanga ibindi bisobanuro birenze video. Ibindi bisobanuro, ibibazo n'ibisubizo bitangwa ku mukiriya wamaze kwishyura consultation.</p>
+            </div>
+
+            <div class="requirement-card active" id="reqCard4">
+                <div class="req-header">
+                    <h3><i class="fas fa-play-circle" style="color:var(--primary-color);"></i> 2.3.1 Ibisobanuro byibanze: Video Igisubizo</h3>
+                    <div class="req-status" id="status4">Pending</div>
+                </div>
+               
+                <p class="req-description">Reba video y'igisubizo maze wemeze niba wanyuzwe cyangwa niba wifuza gukomeza ku zindi services.</p>
+                <div class="req-confirmation">
+                    <button type="button" class="btn-confirm no" onclick="confirmRequirement(4, false)"><i class="fas fa-times"></i> Ntago nyuzwe, nzagaruka</button>
+                    <button type="button" class="btn-confirm yes" onclick="confirmRequirement(4, true)"><i class="fas fa-check"></i> Ndanyuzwe, ndakomeza</button>
+                </div>
+            </div>
+
+            <div class="consultation-container">
+                <div class="payment-section" id="paymentSection">
+                    <h3><i class="fas fa-money-check-alt" style="color:var(--primary-color);"></i> 2.3.2 Uburyo bwo kwishyura / Payment Details</h3>
+                    
+                    <div class="payment-option" style="margin: 14px 0;">
+                        <label class="checkbox-option">
+                            <input type="checkbox" id="directPayment" onchange="togglePaymentDetails()">
+                            <span>Ishyura ukoresheje Uburyo wahisemo / Pay directly using selected method</span>
+                        </label>
+                    </div>
+
+                    <div class="payment-actions" style="display:flex; gap:12px; margin-top:15px;">
+                        <button type="button" class="btn btn-prev" id="changeMethodBtn" onclick="goToRequirementStep(3)"><i class="fas fa-exchange-alt"></i> Hindura Uburyo bwo Kwishyura</button>
+                    </div>
+                    
+                    <div class="payment-details" id="paymentDetails" style="display: none; margin-top: 20px;">
+                        <div id="selectedPaymentDetails"></div>
+                        <div class="payment-actions" style="display:flex; gap:12px; margin-top:15px;">
+                            <button type="button" class="btn btn-next" id="paidBtn" onclick="handlePaidClick()"><i class="fas fa-money-check"></i> Nishyuye, mpa code / I've Paid (Generate Code)</button>
+                        </div>
+                        <div class="payment-code" id="paymentCodeContainer" style="display: none; margin-top:20px;">
+                            <h4><i class="fas fa-barcode" style="color:var(--primary-color);"></i> Code yatanzwe / Generated Payment Code</h4>
+                            <div class="code-display-wrap">
+                                <div class="code-display" id="paymentCode">BSR-XXXX-XXXX</div>
+                                <button type="button" class="btn-copy-code" onclick="copyPaymentCode()" title="Copy code"><i class="fas fa-copy"></i> Kanda wandukure / Copy Code</button>
+                            </div>
+                            <p style="font-size:13px; color:var(--text-secondary);"><i class="fas fa-info-circle"></i> Kanda "Copy" hejuru, hanyuma uyishyire mu mwanya wo kwemeza hano hasi.</p>
+                        </div>
+                        <div class="modern-input-group" id="confirmationGroup" style="display:none; margin-top:16px;">
+                            <label for="confirmationInput"><i class="fas fa-key"></i> Code yemeza ko wishyuye / Payment Confirmation Code</label>
+                            <input type="text" id="confirmationInput" placeholder="Shyiramo code yo kwemeza..." style="text-transform:uppercase;">
+                        </div>
+                        <div class="payment-actions" style="display:flex; gap:12px; margin-top:18px;">
+                            <button type="button" class="btn btn-success" id="confirmPaymentBtn" onclick="confirmPayment()" disabled><i class="fas fa-check-circle"></i> Emeza Kwishyura / Confirm Payment</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="no-payment-section" style="margin-top: 24px;">
+                    <h3><i class="fas fa-ban" style="color:var(--danger-color);"></i> 2.3.3 Nta buryo bwo kwishyura / No Payment Option</h3>
+                    <div class="warning-box">
+                        <i class="fas fa-triangle-exclamation"></i>
+                        <p>Umukiriya utishyuye consultation nta bindi bisobanuro ahabwa. (If no consultation fee is paid, you cannot proceed to advanced listings).</p>
+                    </div>
+                    <button type="button" class="btn btn-prev" onclick="noPayment()">
+                        <i class="fas fa-arrow-left"></i> Subira inyuma / Return Back
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2.3 YouTube Video Section -->
+        <div id="step41Section">
+            <div class="step-header">
+                <h2><i class="fas fa-store-slash" style="color:var(--primary-color);"></i> 2.3 ISOKO NTAGO ARI COMMISSIONAIRE</h2>
+                <p>Sobanukirwa itandukaniro riri hagati y'isoko ry'ikoranabuhanga n'abamamyi (commissionaires).</p>
+            </div>
+            <div class="video-container">
+                <iframe
+                    width="100%"
+                    height="400"
+                    src="https://www.youtube.com/embed/awSztH5MmrI"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         PAGE 2: Uko Isoko Rikora (Step 3 in JS / Step 2 on progress bar)
+         ========================================================================= -->
+    <div class="step-content" id="step3">
+        <div class="step-header">
+            <h2><i class="fas fa-clock" style="color:var(--primary-color);"></i> Ibisobanuro Rusange</h2>
+            <h3><strong>Iminota 15 ya mbere ni ubuntu</strong>. Kugira ngo ukomeze ubashe gusurwa no kwamamarizwa, hasabwa consultation: <strong>50,000 RWF</strong>.</h3>
+        </div>
+
+        <div class="modern-summary-box">
+            <h2><i class="fas fa-circle-info" style="color:var(--primary-color);"></i> UKO ISOKO RIKORA: INCAMAKE</h2>
+            <ul class="summary-checklist">
+                <li><i class="fas fa-comments"></i> 2.1 Ibisobanuro: Consultation</li>
+                <li><i class="fas fa-building"></i> 2.2 Gute mu bikorwa</li>
+                <li><i class="fas fa-handshake-slash"></i> 2.3 Isoko ntago ari Commissionaire</li>
+            </ul>
+        </div>
+        
+        <div class="section-block">
+            <div class="section-title-wrap">
+                <span class="section-badge">2.1</span>
+                <h2 class="section-title"><i class="fas fa-comments"></i> IBISOBANURO: CONSULTATION</h2>
+            </div>
+            
+            <div class="section-illustration">
+                <img src="image/table1.jpeg" alt="Consultation Roles Illustration" class="roles-illustration" loading="lazy">
+            </div>
+        </div>
+       
+        <!-- 2.2 Tour Carousel Section -->
+        <div class="section-block">
+            <div class="section-title-wrap">
+                <span class="section-badge">2.2</span>
+                <h2 class="section-title"><i class="fas fa-building"></i> GUTE MU BIKORWA</h2>
+            </div>
+            <h3><b>Isoko rikora gute mu bikorwa?</b></h3>
+            <p><small>KU BAKILIYA BATISHYURA CONSULTATION HAGENDEWE KURI THEORY GUSA (BEMERA BABONYE IBIKORWA)</small></p>
+            
+            <div class="tour-container">
+                <div class="tour-navigation">
+                    <button type="button" class="tour-nav-btn" onclick="prevTourCard()"><i class="fas fa-chevron-left"></i> Previous</button>
+                    <div class="tour-counter" id="tourCounter">Card 1 of 7</div>
+                    <button type="button" class="tour-nav-btn next-green" onclick="nextTourCard()">Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+                
+                <div class="tour-cards-container">
+                    <!-- Card 1 -->
+                    <div class="tour-card active" id="tourCard1">
+                        <div class="tour-card-image">
+                            <img src="image/isuzuma.jpg" alt="Company Entrance">
+                        </div>
+                        <div class="tour-card-content">
+                            <h3><i class="fas fa-user-check" style="color:var(--primary-color);"></i> 2.2.1 Isuzuma / Consultation</h3>
+                            <p>Video ntacyo igabanya nk'umukozi unaniwe, ntanubwo yakubeshya ntanicyo yakongeraho kugirango wishyure. Abantu bose bahabwa amakuru angana.</p>
+                            <h4 style="margin-top:10px;">2.2.1.1 Kubera iki consultation:</h4>
+                            <ul>
+                                <li>Transiporo yo kujya gusura no gufotora umutungo.</li>
+                                <li>Umwanya w'ibibazo n'ibisubizo by'inzobere.</li>
+                            </ul>
+                            <h4 style="margin-top:10px;">2.2.1.2 Amategeko n'amabwiriza:</h4>
+                            <ul>
+                                <li>Consultation isanzwe (kugenda ukagaruka) ni 100,000 RWF; uyu munsi ni 50,000 RWF.</li>
+                                <li>Guhabwa ibisubizo byose bishingiye ku mategeko.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="tour-card" id="tourCard2">
+                        <div class="tour-card-image">
+                            <img src="image/guichet.jpg" alt="Reception Counter">
+                        </div>
+                        <div class="tour-card-content">
+                            <h3><i class="fas fa-cash-register" style="color:var(--primary-color);"></i> 2.2.2 Aho bishyurira / Guichet / Counter</h3>
+                            <p>Uburyo bwose bwo kwishyura buremewe:</p>
+                            <ul>
+                                <li>Inyemezabwishyu / Facture EBM yemewe n'amategeko.</li>
+                                <li>Serivisi zizewe kandi zifite amasezerano.</li>
+                            </ul>
+                            <h3 style="color:red"><i class="fas fa-circle-question"></i> Wahabwa serivisi ya EBM ku bintu bitizewe?</h3>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="tour-card" id="tourCard3">
+                        <div class="tour-card-image">
+                            <img src="image/graphic design.jpg" alt="Creative Studio">
+                        </div>
+                        <div class="tour-card-content">
+                            <h3><i class="fas fa-palette" style="color:var(--primary-color);"></i> 2.2.3 Gutegura ibigurishwa n'ibikodeshwa</h3>
+                            <p>Content creation & Graphic design y'umwuga:</p>
+                            <ul>
+                                <li>Gufotora amafoto agezweho (High definition).</li>
+                                <li>Gusemura mu ndimi zose (Translation).</li>
+                                <li>Gushyira ku rwego mpuzamahanga (International standards).</li>
+                            </ul>
+                            <h3 style="color:red"><i class="fas fa-circle-question"></i> Company yategura ibi byose utarishyura consultation?</h3>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="tour-card" id="tourCard4">
+                        <div class="tour-card-image">
+                            <img src="image/sales consultant.jpg" alt="Sales Consultation">
+                        </div>
+                        <div class="tour-card-content">
+                            <h3><i class="fas fa-user-tie" style="color:var(--primary-color);"></i> 2.2.4 Umujyanama w'ubucuruzi (Sales Consultant)</h3>
+                            <ul>
+                                <li>Gusuzuma agaciro k'isoko (Market value analysis).</li>
+                                <li>Guhitamo serivisi ikubereye (Service choice).</li>
+                            </ul>
+                            <h3 style="color:red"><i class="fas fa-circle-question"></i> Company yakugira inama utarishyura consultation?</h3>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="tour-card" id="tourCard5">
+                        <div class="tour-card-image">
+                            <img src="image/umujyanama mukuru.jpg" alt="Senior Sales Consultant">
+                        </div>
+                        <div class="tour-card-content">
+                            <h3><i class="fas fa-briefcase" style="color:var(--primary-color);"></i> 2.2.5 Umujyanama Mukuru w'Ubucuruzi</h3>
+                            <ul>
+                                <li>Ibigo bito n'ibiciriritse (SMEs).</li>
+                                <li>Ibigo binini n'inganda (Large enterprises & factories).</li>
+                                <li>Abakiliya ba corporate (Amabanki, ibigo by'ubwishingizi).</li>
+                            </ul>
+                            <h3 style="color:red"><i class="fas fa-circle-question"></i> Umukiriya aje kurubuga yarazanywe n'izindi serivisi agahita abona inzu cyangwa ikibanza cyawe, ntiyaguhamagara vuba?</h3>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="tour-card" id="tourCard6">
+                        <div class="tour-card-image">
+                            <img src="image/boardroom.jpg" alt="Boardroom">
+                        </div>
+                        <div class="tour-card-content">
+                            <h3><i class="fas fa-users-gear" style="color:var(--primary-color);"></i> 2.2.6 Ahabera inama / Boardroom Follow-up</h3>
+                            <ul>
+                                <li>Gukurikirana inama igihe abakiliya batabonetse vuba.</li>
+                                <li>Gufata imyanzuro yo kwamamaza mu buryo bwihariye (Rwanda Day, Expo, RTV, TV1, amaradiyo).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="tour-card" id="tourCard7">
+                        <div class="tour-card-image">
+                            <img src="image/call center.jpg" alt="Call Center Team">
+                        </div>
+                        <div class="tour-card-content">
+                            <h3><i class="fas fa-headset" style="color:var(--primary-color);"></i> 2.2.7 Guhamagara no Kwitaba / Call Center</h3>
+                            <p>Itsinda rishinzwe gufata gahunda no kuzikurikirana. Ntabwo bakira abakiliya imbonankubone ahubwo bahuza abaguzi n'abagurisha.</p>
+                            <h3 style="color:red"><i class="fas fa-circle-question"></i> Company yitaba ikanahamagara abakiliya barenga miliyoni ku mwaka, yabura abaguhuza nabo?</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tour-dots">
+                    <span class="tour-dot active" onclick="goToTourCard(1)"></span>
+                    <span class="tour-dot" onclick="goToTourCard(2)"></span>
+                    <span class="tour-dot" onclick="goToTourCard(3)"></span>
+                    <span class="tour-dot" onclick="goToTourCard(4)"></span>
+                    <span class="tour-dot" onclick="goToTourCard(5)"></span>
+                    <span class="tour-dot" onclick="goToTourCard(6)"></span>
+                    <span class="tour-dot" onclick="goToTourCard(7)"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button-group">
+            <button type="button" class="btn btn-prev" onclick="prevPageSection()"><i class="fas fa-arrow-left"></i> Subira Inyuma</button>
+            <button type="button" class="btn btn-next" id="step43Next" onclick="if(validatePayment()){nextStep(3)}" disabled>Komeza kuri Services <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <!-- =========================================================================
+         PAGE 3: Services & Tiers (Step 6 in JS / Step 3 on progress bar)
+         ========================================================================= -->
+    <div class="step-content" id="step6">
+        
+        <div class="step-header">
+            <h2><i class="fas fa-layer-group" style="color:var(--primary-color);"></i> Ibisobanuro kuri Serivisi na Plans</h2>
+            <p>Ibisobanuro kuri serivisi hasabwa kubanza kwishyura consultation: <strong>50,000 RWF</strong>.</p>
+        </div>
+
+        <div class="modern-summary-box">
+            <h2><i class="fas fa-tags" style="color:var(--primary-color);"></i> SERVICES: INCAMAKE</h2>
+            <ul class="summary-checklist">
+                <li><i class="fas fa-user-shield"></i> 3.1 Ubujyanama (Consultancy)</li>
+                <li><i class="fas fa-receipt"></i> 3.2 Tarifu (Pricing Plans)</li>
+            </ul>
+        </div>
+
+        <!-- Target Timeline Selection -->
+        <div class="section-block">
+            <h3><i class="fas fa-calendar-alt" style="color:var(--primary-color);"></i> Urifuza umukiriya ryari?</h3>
+            <p><small>Hitamo igihe wifuza ko umutungo wawe wabonera umukiriya:</small></p>
+            <div class="tiles-grid">
+                <label class="tile-checkbox-label" for="ukwezi">
+                    <input type="checkbox" id="ukwezi" name="ukwezi" value="ukwezi">
+                    <span>Amezi (Months)</span>
+                </label>
+                <label class="tile-checkbox-label" for="Icyumweru">
+                    <input type="checkbox" id="Icyumweru" name="Icyumweru" value="Icyumweru">
+                    <span>Ibyumweru (Weeks)</span>
+                </label>
+                <label class="tile-checkbox-label" for="Umunsi">
+                    <input type="checkbox" id="Umunsi" name="Umunsi" value="Umunsi">
+                    <span>Iminsi (Days)</span>
+                </label>
+                <label class="tile-checkbox-label" for="Amasaha">
+                    <input type="checkbox" id="Amasaha" name="Amasaha" value="Amasaha">
+                    <span>Amasaha (Hours)</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="reassurance-banner">
+            <i class="fas fa-bolt" style="color:var(--warning-color);"></i>
+            <h3>Kubona umukiriya vuba biterwa na serivisi (Plan) wahisemo.</h3>
+        </div> 
+
+        <div class="section-illustration">
+            <img src="image/ubujyanama1.jpeg" alt="Ubujyanama Illustration" class="roles-illustration" loading="lazy">
+        </div>
+
+        <!-- Questions & Preferences -->
+        <div class="section-block">
+            <p><strong><i class="fas fa-search-dollar" style="color:var(--primary-color);"></i> UNYUNZWE N'INAMA WAGIRIWE KU MUTUNGO WAWE?</strong></p>
+            <div class="modern-choice-grid" style="max-width: 360px;">
+                <label class="choice-pill-label">
+                    <input type="radio" name="a14_ready_service" value="oya">
+                    <i class="fas fa-times-circle"></i>
+                    <span>OYA</span>
+                </label>
+                <label class="choice-pill-label">
+                    <input type="radio" name="a14_ready_service" value="yego">
+                    <i class="fas fa-check-circle"></i>
+                    <span>YEGO</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="section-illustration">
+            <img src="image/mk.jpeg" alt="Market Roles" class="roles-illustration" loading="lazy">
+        </div>
+
+        <div class="section-block">
+            <p><strong><i class="fas fa-clock" style="color:var(--primary-color);"></i> TWIRENGAGIJE TARIFU (AMAFARANGA YO KUJYA KU ISOKO), KUGIRANGO UBONE UMUKILIYA VUBA, WAHITAMO IKI?</strong></p>
+            <div class="modern-choice-grid">
+                <label class="choice-pill-label">
+                    <input type="radio" name="a14_tier_pref" value="BASIC">
+                    <span>BASIC</span>
+                </label>
+                <label class="choice-pill-label">
+                    <input type="radio" name="a14_tier_pref" value="STANDARD">
+                    <span>STANDARD</span>
+                </label>
+                <label class="choice-pill-label">
+                    <input type="radio" name="a14_tier_pref" value="PREMIUM">
+                    <span>PREMIUM</span>
+                </label>
+                <label class="choice-pill-label">
+                    <input type="radio" name="a14_tier_pref" value="PREMIUM EXPRESS">
+                    <span>PREMIUM EXPRESS</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="section-illustration">
+            <img src="image/ubujyanama3.jpeg" alt="Payment Timing Illustration" class="roles-illustration" loading="lazy">
+        </div>
+
+        <div class="section-block">
+            <p><strong><i class="fas fa-layer-group" style="color:var(--primary-color);"></i> KUGIRANGO UBONE UMUKILIYA VUBA KANDI WISHYURE MAKE, WAHITAMO KWISHYURA RYARI?</strong></p>
+            <div class="modern-choice-grid">
+                <label class="choice-pill-label">
+                    <input type="radio" name="a14_time_pref" value="MU KWEZI">
+                    <span>MU KWEZI</span>
+                </label>
+                <label class="choice-pill-label">
+                    <input type="radio" name="a14_time_pref" value="MU CYUMWERU">
+                    <span>MU CYUMWERU</span>
+                </label>
+                <label class="choice-pill-label">
+                    <input type="radio" name="a14_time_pref" value="EJO">
+                    <span>EJO</span>
+                </label>
+                <label class="choice-pill-label">
+                    <input type="radio" name="a14_time_pref" value="UYU MUNSI">
+                    <span>UYU MUNSI</span>
+                </label>
+            </div>
+        </div>
+
+        <!-- Role Video & Pricing Cards -->
+        <div class="roles-container">
+            <div class="explanation-video">
+                <h3><i class="fas fa-video" style="color:var(--primary-color);"></i> Sobanukirwa serivisi zitangwa na BuySellorRent muri Video</h3>
+                <div class="video-container">
+                    <video class="video-preview" preload="metadata" muted>
+                        <source src="video/video 2.mp4" type="video/mp4">
+                        <source src="https://raw.githubusercontent.com/buysellorrent1/salesguide/main/video/video%202.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-placeholder" onclick="playVideo(this, 'video/video 2.mp4')">
+                        <div class="play-button-overlay">
+                            <i class="fas fa-play-circle"></i>
+                            <span>Kanda urebe Video y'ibisobanuro bya Plans</span>
+                        </div>
+                    </div>
+                </div>
+                <p><small>Reba video kugira ngo usobanukirwe ibijyanye na Basic, Standard & Premium.</small></p>
+            </div>
+
+            <!-- Modern 4-Tier Pricing Grid -->
+            <div class="roles-grid">
+                <!-- 1. BASIC -->
+                <div class="role-card" id="basicRole">
+                    <div class="role-header">
+                        <h3><i class="fas fa-bicycle"></i> Basic</h3>
+                    </div>
+                    <div class="role-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Uwagushaka ku rubuga yakubona</li>
+                            <li><i class="fas fa-check"></i> Ikigurishwa/igikodeshwa kijya hasi ku rubuga</li>
+                            <li><i class="fas fa-check"></i> Harahendutse cyane</li>
+                            <li><i class="fas fa-times"></i> Ni nko gucururiza mu gikari cy'isoko</li>
+                            <li><i class="fas fa-times"></i> Abakiliya benshi ntibagera mu gikari</li>
+                            <li><i class="fas fa-times"></i> Abakiliya bakugeraho ni bake cyane</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn-role-select" onclick="selectRole('basic')">Select Basic</button>
+                </div>
+                
+                <!-- 2. STANDARD -->
+                <div class="role-card" id="standardRole">
+                    <div class="role-header">
+                        <h3><i class="fas fa-motorcycle"></i> Standard</h3>
+                    </div>
+                    <div class="role-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ibyiza byose bya Basic</li>
+                            <li><i class="fas fa-check"></i> Serivisi yishyurirwa amafaranga agereranije</li>
+                            <li><i class="fas fa-check"></i> Ikigurishwa cyangwa igikodeshwa kijya hagati</li>
+                            <li><i class="fas fa-check"></i> Amahirwe yo kubona abakiliya arisumbuye</li>
+                            <li><i class="fas fa-times"></i> Bisaba ko umukiriya agushakisha mu nyubako igeretse</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn-role-select" onclick="selectRole('standard')">Select Standard</button>
+                </div>
+                
+                <!-- 3. PREMIUM -->
+                <div class="role-card" id="premiumRole">
+                    <div class="role-badge">Popular</div>
+                    <div class="role-header">
+                        <h3><i class="fas fa-car"></i> Premium</h3>
+                    </div>
+                    <div class="role-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Ibyiza byose bya Standard</li>
+                            <li><i class="fas fa-check"></i> Iguhaye amahirwe menshi kurusha izindi zose</li>
+                            <li><i class="fas fa-check"></i> Amafaranga yishyurwa mbere ni make cyane ugereranije n'ayabamamyi</li>
+                            <li><i class="fas fa-check"></i> Ikigurishwa/igikodeshwa gihita kijya hejuru y'ibindi</li>
+                            <li><i class="fas fa-times"></i> Kimanuka gusa iyo haje undi wishyuye Premium</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn-role-select" onclick="selectRole('premium')">Select Premium</button>
+                </div>
+
+                <!-- 4. PREMIUM EXPRESS -->
+                <div class="role-card" id="premiumExpressRole">
+                    <div class="role-badge">⚡ Most Popular • 24h</div>
+                    <div class="role-header">
+                        <h3><i class="fas fa-plane"></i> Premium Express</h3>
+                    </div>
+                    <div class="role-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Kongerera amahirwe yo kubona umukiliya mu masaha 24</li>
+                            <li><i class="fas fa-check"></i> Isoko riguhuza n'abakiliya bari muri database direct</li>
+                            <li><i class="fas fa-check"></i> Abahamagara baturutse kuri televiziyo, WhatsApp, n'abakozi ba marketing</li>
+                            <li><i class="fas fa-check"></i> Ntabwo utegereza abasura website gusa</li>
+                            <li><i class="fas fa-check"></i> Iyo utabonye umukiriya, isoko rikomeza kugushakira buri kwezi nta yandi mafaranga wishyuye</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn-role-select" onclick="selectRole('premiumExpress')">Select Premium Express</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="button-group">
+            <button type="button" class="btn btn-prev" onclick="prevPageSection()"><i class="fas fa-arrow-left"></i> Subira Inyuma</button>
+            <button type="button" class="btn btn-success" onclick="completeProcess()">
+                <i class="fas fa-check-circle"></i> Emeza Byose / Complete Process
+            </button>
+        </div>
+    </div>
+
+</main>
+
+<!-- Modern Image Lightbox Modal -->
+<div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox()">
+    <button type="button" class="lightbox-close" onclick="closeLightbox()" title="Close image">&times;</button>
+    <img src="" alt="Enlarged Document" class="lightbox-img" id="lightboxImg">
+</div>
+
+<!-- Loading Overlay -->
+<div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <h3>Turi gushungura ubusabe bwawe...</h3>
+        <p style="margin-top:6px; font-size:13px; color:var(--text-secondary);">Processing your request securely...</p>
+    </div>
+</div>
+
+<!-- Success Modal -->
+<div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+        <div class="modal-icon">
+            <i class="fas fa-check-circle"></i>
+        </div>
+        <h2>Byarangiye Neza! / Completed!</h2>
+        <p style="margin: 14px 0 24px; color:var(--text-secondary);">
+            Ubusabe bwawe bwamaze kwakirwa muri sisitemu ya <strong>BuySellorRent.com</strong>. Umujyanama wacu aragufasha mu gihe gikurikira.
+        </p>
+        <button type="button" class="btn btn-primary" onclick="closeModalAndReset()" style="width:100%;">
+            <i class="fas fa-thumbs-up"></i> SOHOKA / OK
+        </button>
+    </div>
+</div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>

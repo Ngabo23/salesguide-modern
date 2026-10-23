@@ -1,0 +1,39 @@
+/* Modern Table & Image Support Styles */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: var(--radius-md, 12px);
+    border: 1px solid var(--border-color, #e2e8f0);
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card, #ffffff);
+}
+
+.table-container th,
+.table-container td {
+    padding: 14px 18px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid var(--border-color, #e2e8f0);
+    color: var(--text-primary, #0f172a);
+    font-size: 14px;
+}
+
+.table-container table td img {
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    border-radius: var(--radius-sm, 8px);
+}
+
+@media (max-width: 768px) {
+    .table-container table td img {
+        max-width: 80px;
+    }
+}
